@@ -1,0 +1,585 @@
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
+}
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*            header start           */
+
+.header {
+  height: 100%;
+  max-height: 450px;
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+  background: url("../img/баба на скале2.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.header::before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  width: 1660px;
+  height: 450px;
+  background-color: #213036;
+  border: 0;
+}
+
+.intro {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.header__logo {
+  height: auto;
+  width: 179px;
+  z-index: 2;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__item {
+  z-index: 2;
+  margin-right: 35px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  transition: all 0.2s linear;
+  text-decoration: underline;
+  color: #fce38a;
+}
+
+.header__title {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 376px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header__title__caption {
+  position: absolute;
+  top: 100px;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 75px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*       Post List       */
+.main {
+  height: 100%;
+
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.column {
+  width: 100%;
+  max-width: 778px;
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 64px;
+  height: 100%;
+}
+
+.article {
+  width: 778px;
+  height: 294px;
+  display: flex;
+  margin-top: 60px;
+}
+
+.article:first-child {
+  margin-top: 0;
+}
+
+.article__img {
+  box-sizing: border-box;
+  margin-right: 30px;
+  height: 295px;
+  width: 381px;
+}
+
+.article__text {
+  margin: 0;
+  padding: 0;
+  width: 367px;
+}
+
+.article__category {
+  padding-top: -2px;
+}
+
+.article__category__link {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #b59f5b;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 19px;
+}
+
+.article__category__link:hover {
+  text-decoration: underline;
+}
+
+.article__text__title {
+  box-sizing: border-box;
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.article__text__title a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.article__text__dateandauthor {
+  box-sizing: border-box;
+  margin-top: 22px;
+}
+
+.article__text__time {
+  box-sizing: border-box;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888;
+  line-height: 22px;
+}
+
+.article__text__author {
+  box-sizing: border-box;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.article__text__desc {
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.article__text__desc p {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+#new__paragraph {
+  box-sizing: border-box;
+  display: block;
+  margin-top: 13px;
+}
+
+/*      Side Bar     */
+.side__bar {
+  padding-top: 55px;
+  margin-left: 120px;
+  max-width: 272px;
+}
+
+.side__bar__news {
+  max-width: 272px;
+}
+
+.side__bar__news__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 27px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 29.15px;
+  text-transform: uppercase;
+}
+
+.side__bar__news__title::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #b59f5b;
+}
+
+.side__bar__new {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.side__bar__new:last-child {
+  margin-bottom: 0;
+}
+
+.side__bar__imag {
+  margin-right: 18px;
+}
+
+.side__bar__post {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.side__bar_post__time {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.side__bar__post__title {
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.side__bar__post__title a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.side__bar__form {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 55px;
+  margin-bottom: 70px;
+}
+
+.side__bar__input {
+  width: 225px;
+  height: 48px;
+  border: 0;
+  background-color: #f4f7f6;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+.side__bar__button {
+  height: 48px;
+  width: 48px;
+  border: 0;
+  background-color: #b59f5b;
+  background-image: url(../img/лупа.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.side__bar__button:hover {
+  background-color: #000000;
+}
+
+.sidebar__subsribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__subsribe__title {
+  text-transform: uppercase;
+  display: block;
+  padding-left: 90px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar__subsribe__title::after {
+  margin-left: 7px;
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  margin-top: 8px;
+  background-color: #b59f5b;
+  margin-bottom: 22px;
+}
+
+.sidebar__subsribe__input {
+  width: 275px;
+  height: 48px;
+  border: 0;
+  padding-left: 20px;
+  margin-bottom: 17px;
+  background-color: #f4f7f6;
+}
+
+.sidebar__subsribe__button {
+  width: 275px;
+  height: 48px;
+  border: 0;
+  background-color: #b59f5b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar__subsribe__button:hover {
+  background-color: #000000;
+}
+
+.sidebar__tags__title {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar__tags__title::after {
+  margin-left: 106px;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  background-color: #b59f5b;
+}
+
+.sidebar__tags__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 58px;
+}
+
+.sidebar__tag {
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 11px;
+  margin: 5px;
+  border: 3px solid #eeeeee;
+  cursor: pointer;
+}
+
+.sidebar__tag a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sidebar__categories__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar__categories__title::after {
+  margin-left: 106px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  background-color: #b59f5b;
+}
+
+.sidebar__categories__list {
+  margin-top: 15px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #eeeeee;
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar__categories__list a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sidebar__categories__list__span {
+  font-weight: bold;
+  font-size: 12px;
+  color: #b59f5b;
+  position: absolute;
+  padding-left: 5px;
+}
+
+/*----------------FOOTER START-------------------*/
+.footer {
+  max-width: 1660px;
+  margin-top: 56px;
+}
+
+.footer__social {
+  background-color: #f4f7f6;
+  width: 1185px;
+  height: 85px;
+  margin-left: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social__lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social__list {
+  list-style-type: none;
+}
+
+.footer__social__link-1 {
+  content: "";
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+  display: block;
+  width: 47px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+
+.footer__social__link-2 {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+}
+
+.footer__social__link-3 {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
+}
+
+.footer__social__link-4 {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+}
+
+.footer__social__link-5 {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+}
+
+.footer__social__list span {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+}
+
+.footer__copyrights {
+  margin-top: 64px;
+  margin-bottom: 40px;
+  padding-left: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #a7a7a7;
+}
